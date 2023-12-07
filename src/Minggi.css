@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+}
+
+input {
+  margin: 5px;
+  width: 120px;
+  height: 15px;
+  border-radius: 1cm;
+  background-color: white;
+  height: 2rem;
+  padding-left: 15px;
+  outline: 0 none;
+}
+
+input[name="data"] {
+  display: flexbox;
+  margin-left: 40px;
+  height: 2rem;
+  padding-left: 15px;
+  outline: 0 none;
+}
+button[name="buttons"].addBtn{
+  width: 100%;
+  height: 30px;
+  margin: 3px;
+  background-color: rgb(110, 109, 109);
+  color: white;
+  border-radius: 100vh;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+button[name="buttons"] {
+  width: 23%;
+  height: 30px;
+  margin: 3px;
+  background-color: rgb(110, 109, 109);
+  color: white;
+  border-radius: 100vh;
+  font-weight: bold;
+  font-size: .7rem;
+}
+
+.main-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  white-space: pre-wrap;
+  font-weight: bold;
+  width: 100%;
+  height: max-content;
+}
+.chart-edit-container{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.chart-edit-title{
+  border-bottom: 3px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+.charts {
+  flex: 1;
+  width: 60%;
+  background: #cccccc5d;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chats.resultDiv{
+  transform: translateX(50%);
+}
+
+.graph-container{
+  width: max-content;
+  height: max-content;
+  /* transform: translateX(-20%); */
+}
+.main-container.resultDiv{
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.chart-edit-container.resultDiv{
+  width: 1000px;
+  grid-template-columns: 2fr 1fr;
+}
+.graph-container.resultDiv{
+
+}.graphLabel-container{
+  border-radius: 10px;
+  background: #cccccc5d;
+  padding: 10px;
+  padding-top: 0;
+  height: max-content;
+}
+.label-grid-column{
+  display: grid;
+  width: 100%;
+  height: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  font-size:  1.2rem;
+}
+.label-grid{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  font-size:  1.2rem;
+}
+.label-grid>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #afafaf;
+  height: 100%;
+  border-radius: 5px;
+}
+.label-grid>div>p{
+  margin: 0;
+}
+.graphLabel{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+}

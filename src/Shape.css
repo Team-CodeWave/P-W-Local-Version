@@ -1,0 +1,439 @@
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@font-face {
+  font-family: 'EliceDigitalBaeum-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrapper.shape{
+  height: max-content;
+  width: 97%;
+  display: flex;
+  justify-content: center;
+}
+.wholebox.resultDiv div{
+  margin-bottom: 30px;
+}
+.wholebox2.resultDiv{
+  width: 100vw;
+  margin: 100px 0;
+}
+.wrapper.AM2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-container{
+  display:flex;
+  position:relative;
+  flex-direction: row;
+  width: 980px;
+  margin-top:100px;
+  overflow-x: auto
+}
+.shapeCount{
+  cursor: pointer;
+}
+.shapes-container{
+  margin-bottom: 300px;
+}
+.shapeBtn-container button{
+  border: none;
+  background-color: #aaaaaa30;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s;
+}
+.shapeBtn-container button:hover{
+  opacity: 0.7;
+}
+.shapeBtn-container button:active{
+  background: #33333330;
+}
+.shape-container-row {
+  height: 800px;
+  width:500px;
+  display: flex;
+  flex-shrink: 0;
+}
+.shapeColor{
+  width: 150px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.shape-container-column {
+  position: relative;
+  margin-bottom: 200px; 
+
+}
+.point-row {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-top:300px;
+  position:absolute;
+
+}
+.line-row {
+
+  width: 500px;
+  height: 2px; 
+  margin-top:310px;
+
+  position:absolute;
+}
+.circle-row {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-top:300px;
+  position:absolute;
+  margin-left:490px;
+}
+.point-column, .line-column, .circle-column, .text-box-column {
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%);
+}
+.point-column {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.line-column {
+  width: 2px;
+  height: 200px; 
+}
+
+.circle-column {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 200px; 
+}
+
+.text-box-left,.text-box-right,.text-box-last-left,.text-box-last-right {
+  position : absolute;
+  width: 300px; 
+  top:0px;
+  background-color: #ffffff5d; 
+  border-radius: 10px;
+  padding: 5px; 
+
+  resize: both;
+  overflow: visible;
+}
+
+
+.text-box-left {
+  left: 10%; 
+  transform: translateX(60%); 
+}
+
+.text-box-right {
+  right: 100%; 
+  transform: translateX(-60%); 
+}
+.text-box-last-left {
+  top: 200px;
+  left: 10%; 
+  transform: translateX(60%); 
+}
+.text-box-last-right {
+  font-family:  arial ;
+  top:200px;
+  right: 100%; 
+  transform: translateX(-60%); 
+}
+
+
+.text-box-bottom,.text-box-top,.text-box-last-bottom,.text-box-last-top{
+  width: 300px; 
+  height:max-content;
+  top:10px;
+  background-color: #ffffff5d; 
+  padding: 5px; 
+  flex-wrap: nowrap;
+}
+
+
+.text-box-bottom {
+  top: 360px;
+  position: absolute;
+}
+
+.text-box-top {
+  top: 0px;
+  position: absolute;
+}
+
+.text-box-last-bottom {
+  top: 360px;
+  margin-top:30px;
+  margin-left : 490px;
+}
+
+.text-box-last-top {
+  top: 0px;
+}
+
+
+
+
+.shapes-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; /* 도형들을 가운데 정렬하는 스타일 */
+}
+.button{
+  width : 100px;
+  height : 50px;
+  margin : 36px 10px;
+}
+.button1 {
+  width: 50px;
+  height: 91px;
+  margin: 10px 3px;
+}
+
+.shape-creation-area {
+  /* 기존 스타일 */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: visible;
+}
+.text-area1,.text-area2,.text-area3{
+  width: 100%;
+  border : none;
+  outline: 0 none;
+  resize: none;
+}
+
+.text-area1{
+  font-size: 30px;
+  
+}
+.text-area2{
+  font-size: 20px;
+
+}
+.text-area3{
+  font-size: 15px;
+
+}
+
+
+/* AboutMe1 */
+
+.wholebox{
+  width: 1000px;
+  height:max-content;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  align-items: start;
+}
+
+
+.wholebox textarea::-webkit-resizer {
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent orangered orangered transparent;
+}
+
+
+.Text-area-a1, .Text-area-b1, .Text-area-c1{
+  position: relative;
+  width: 500px;
+  height:fit-content;
+  font-family: 'EliceDigitalBaeum-Bd';
+  font-weight: 400;
+  border: none;
+  text-align: left;
+  outline: 0 none;
+  margin-top: 40px;
+}
+.Text-area-a1{
+  font-size:22px;
+}
+.Text-area-b1 {
+  font-size: 60px;
+}
+.Text-area-c1 {
+  font-size: 22px;
+}
+
+
+/* AboutMe2 */
+
+.wholebox2 {
+  width: 97%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 세로 중앙 정렬을 위한 추가 */
+  justify-content: center;
+  /* 가로 중앙 정렬을 위한 추가 */
+}
+.wholebox2 textarea::-webkit-resizer {
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent orangered orangered transparent;
+}
+
+.Text-area-a2 {
+  font-size: 100px;
+  width: max-content;
+  max-width: 1000px;
+  font-family: 'EliceDigitalBaeum-Bd', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border:none;
+  outline: 0 none;
+}
+
+
+.Text-area-c2 {
+  font-size: 30px;
+  width: max-content;
+  max-width: 1000px;
+  font-family: 'EliceDigitalBaeum-Bd', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  border: none;
+  outline: 0 none;
+}
+
+
+/* AboutMe3 */
+
+.aboutme3-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutme3-container.resultDiv{
+  margin-bottom: 50px;
+}
+.wholebox3 textarea::-webkit-resizer {
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent orangered orangered transparent;
+}
+
+.wholebox3 {
+  margin-top:27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Text-area-a3 {
+  font-size: 3rem;
+  width: 400px;
+  font-family: 'EliceDigitalBaeum-Bd', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  outline: 0 none;
+}
+
+.Text-area-c3 {
+  font-size: 1.5rem;
+  width: 600px;
+  font-family: 'EliceDigitalBaeum-Bd', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  border: none;
+  outline: 0 none;
+}
+
+.aboutme3-image-upload-Btn{
+  margin: 50px 0;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  background: #efefef;
+  overflow: hidden;
+  cursor: pointer;
+}
+.aboutme3-image-upload-Btn>svg{
+  height: 50%;
+  width: 50%;
+}
+.aboutme3-image-upload-Btn:hover{
+  background: #dfdfdf;
+}
+
+
+
+/* TextBox1 */
+.Text-area-z1{
+  position: relative;
+  width: max-content;
+  height:fit-content;
+  font-family: 'EliceDigitalBaeum-Bd';
+  font-weight: 400;
+  border: none;
+  text-align: left;
+  outline: 0 none;
+  margin-top: 40px;
+  font-size: 2rem;
+  border-bottom: 3px solid;
+}
+
+/* TextBox2 */
+.Text-area-z2{
+  position: relative;
+  width: max-content;
+  max-width: 1400px;
+  height:fit-content;
+  font-family: 'EliceDigitalBaeum-Bd';
+  font-weight: 400;
+  border: none;
+  text-align: center;
+  outline: 0 none;
+  margin-top: 40px;
+  font-size: 2rem;
+  border-bottom: 3px solid;
+}
+.wholebox.center{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* TextBox3 */
+.Text-area-z3{
+  position: relative;
+  width: 900px;
+  min-width: 900px;
+  max-width: 900px;
+  height:fit-content;
+  font-family: 'EliceDigitalBaeum-Bd';
+  border: none;
+  background: #afafaf59;
+  border-radius: 10px;
+  padding: 10px;
+  outline: 0 none;
+  margin: 50px 0;
+  font-size: 1.5rem;
+  text-align-last: left;
+}
+
+.Text-area-z3.resultDiv{
+  display: flex;
+  align-items: center;
+  height: max-content;
+}
